@@ -302,6 +302,7 @@ If not return to VS Code and execute the files until you have generated celcius 
 If your computer hangs because you forgot a commit message, 
 just enter your message in the top line of the file it shows in the editor.
 Then click the checkmark in the upper right to close that file and save your commit message.
+"Sync your changes" to push. 
 
 
 ## Checklist
