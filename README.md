@@ -291,8 +291,13 @@ Next, edit this Markdown file to record how things went.
 1. On the VS Code side panel, click the source control icon (has blue bubble with an number in it).
 1. Important! Above the blue Commit button, it will say "Message". You must include a message. 
 1. In that message input box, type "getting set up".
-1. Click the blue "Commit" button and follow instructions to Commit your code.
-1.  and push it up to your GitHub repo. 
+1. Click the blue "Commit" button and follow instructions to Commit your code. and push it up to your GitHub repo. 
+
+Open a browser to your GitHub repo and see if the files have appeared. 
+
+In additon to about.txt, you should have additional data files as well. 
+
+If not return to VS Code and execute the files until you have generated celcius and kelvin csv files.
 
 If your computer hangs because you forgot a commit message, 
 just enter your message in the top line of the file it shows in the editor.
