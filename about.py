@@ -1,29 +1,21 @@
 """
-Import this module to provide a standard header that can 
+This file provides standard information to
 help with debugging. 
 
 This file is named:   about.py
 This module is named: about
 
-Important: To work correctly, 
-           this file must be in the same directory 
-           as the source file that imports it.
+It uses a built-in attribute representing the file name:
 
-To import this file, first import it at the top of your file with:
-    
-    import about as about
+    print(get_header(__file__))
 
-To use the print_header() method, call it with the built-in name of your file:
-
-    print(about.get_header(__file__))
-
-To learn about more search for:
+To learn more, search:
 
     builtin attributes python
 
 """
 
-# imports
+# imports (all of these are from the standard library)
 
 import datetime
 import os
@@ -31,10 +23,10 @@ import platform
 import sys
 
 # declare program constants
-# we assume data is kept in a directory named 'data'
-# if your organization is different, please update the data_folder below:
+# sometimes, data is kept in a folder named 'data'
+# in this repo, data is in the same directory as the source code
 
-data_folder = "" # "data"
+data_folder = ""
 divider = "=============================================================="
 
 # define helper functions
@@ -112,12 +104,14 @@ def get_header(fn):
 # Call some functions and execute code!
 
 # Call our print_header() function on this file to test it
-print(get_header(__file__)) # uncomment to test
+# Python provides a built-in attribute representing the file name
+# two underscores on each side of the word 'file'
+print(get_header(__file__))
 
 print_to_file = True
+
 if print_to_file:
-    # print to a file
+    # print to a file named about.txt
     fn = "about.txt"
     with open(fn, "w") as f:
         f.write(get_header(__file__))
-

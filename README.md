@@ -33,12 +33,12 @@ Your email will not be made public.
 
 You'll create a GitHub username. 
 Your username will be public.
-Your username can be anonomyous (e.g., 'analystextraordinaire') or publicly associated with you. For example, I use 'denisecase'.
-Your username will be a part of the URL to all of your projets. 
+Your username can be anonymous (e.g., 'analystextraordinaire') or publicly associated with you. For example, I use 'denisecase'.
+Your username will be a part of the URL to all of your projects. 
 
 Q: Find the username in this repo URL:
 
-<https://github.com/denisecase/datafun-00-getting-started>
+<https://github.com/denisecase/streaming-01-getting-started>
 
 Recruiters may look at GitHub and LinkedIn profiles - it can be helpful to show your skills using modern tools. 
 Be courageous. The best way to learn is by doing, and
@@ -57,8 +57,6 @@ Each coding project lives in a GitHub repository (called 'repo' for short) in th
     - This GitHub repo is named **streaming-01-getting-started**. 
     - On my machine, it's in my **Documents/streaming-01-getting-started** directory.
 
-For more about GitHub and repos, see [Skills-GitHub](docs/Skills-GitHub.md).
-
 Q: When viewing this GitHub repo in your browser, can you find the username and repo name in the URL? 
 
 Once you have a GitHub account, continue.
@@ -69,7 +67,7 @@ Once you have a GitHub account, continue.
 You'll need the following tools installed on your local machine:
 
 1. **Git** - code management and version control system that interacts with GitHub
-1. **Python (Version 3.7+, 3.11 preferred)** -  popular, powerfull scripting programming language
+1. **Python (Version 3.7+ required, 3.11+ preferred)** -  popular, powerful scripting programming language
 1. **VS Code** - lightweight, cross-platform editor that helps with code completion, code formatting, and more.
 1. **VS Code Extension: Python (by Microsoft)** - makes VS Code fun for Python
 1. **VS Code Extension: GitHub (by GitHub)** - makes Git fun with VS Code
@@ -122,11 +120,17 @@ Verify installation by checking the version. Open a new Terminal (macOS) or Powe
 
 If you don't already have Python, follow these instructions. 
 
+If you've installed the full Anaconda, that's perfect - don't also install Miniconda3. 
+Anaconda is larger and has more Python modules bulit-in. 
+For today, we'll only need the Python Standard Library - we'll do more with additional modules for data analysis later.
+
 Existing users: 
 
 - We use conda rather than pip. It makes some aspects of Python nicer.
 - If you **can** change your Python installation (or add a new one), do so.
-- If you **cannot** chanage your Python installation, e.g., work requires 3.6 and pip, some features **will not work** as expected. As we add features, work with the people responsible for your Python environment. 
+- If you **cannot** change your Python installation, e.g., work requires 3.6 and pip, some features **will not work** as expected. As we add features, work with the people responsible for your Python environment. 
+
+New users (without Anaconda or Mininconda3):
 
 Install Python 3 using the **Miniconda3** distribution by following the instructions at this link:<https://docs.conda.io/en/latest/miniconda.html>.
 
@@ -136,6 +140,8 @@ _"On Windows, macOS, and Linux, it is best to install Miniconda **for the local 
 
 **Miniconda3** includes Python and **conda** (an important tool for managing Python packages and environments). 
 More information is available below.
+
+After installing:
 
 Verify installation. Open a new Terminal (macOS) or open Anaconda Prompt (Windows) and type the following, then hit return/enter:
 
@@ -159,9 +165,9 @@ You can now run Python commands.
 
 Type `2+2` and hit return/enter. Python handles expressions.
 
-Type `print("Hello, world!")` and hit return/enter. You just called the builtin print() function.
+Type `print("Hello, world!")` and hit return/enter. You just called the built-in print() function.
 
-Do a web search for "how to exit interactive Python mode" to get out - or call the builtin exit() function like you called print() above.
+Do a web search for "how to exit interactive Python mode" to get out - or call the built-in exit() function like you called print() above.
 
 Congratulations - that's a great start - being able to execute Python commands makes amazing things possible! 
 
@@ -266,16 +272,16 @@ Once opened, explore - consider these questions:
 1. Click the run button (arrow) in the upper right to execute/run.
 1. Watch what happens in the intergrated terminal window. 
 1. Click in the terminal window. 
-1. Hit the up arrow key 🔼 on your keyboad to get the last command.
+1. Hit the up-arrow key 🔼 on your keyboard to get the last command.
 1. Hit Return (or Enter) to rerun the file using the python command. 
 1. If successful, you should get a new about.txt file. 
 
 For more information about options for executing a Python program in VS Code, see [Run Hello World](https://code.visualstudio.com/docs/python/python-tutorial#_run-hello-world).
 
 The about module provides a lot of useful information about your Python environment. 
-Review these paths carefully - it tells alot about your Python installation and environment. 
+Review these paths carefully - it tells a lot about your Python installation and environment. 
 
-Open, read, and run each remaining .py file/script/module in order. 
+Open, read, and run each remaining Python script (each file will have a .py extension) in order.
 You don't need to fully understand the code yet. 
 
 Instead, try to figure out what each file is doing. 
@@ -284,11 +290,14 @@ writing - we can learn much just by seeing it.
 
 By the end of the course, the code will make much more sense. 
 
-When you finish, you'll have generated several new data files.
-The streaming process will run continously for quite a while. 
+When you finish, you'll have an idea of the types of things possible using just the Python standard library. 
+You'll have generated several new data files.
+The streaming process will run continuously for quite a while. 
 Read the comments in the file to learn how to stop the process.
 
-✅ Creating and running Python scripts is a generally useful skill in analytics.
+Being able to work with your Python environment is a key foundation to accessing some powerful tools for analytics. 
+
+✅ Creating and running Python scripts is a foundational skill in analytics.
 
 
 ## Task 11. Check the Boxes
@@ -318,16 +327,16 @@ VS Code makes it pretty easy.
 
 Verify: Open a browser to your GitHub repo and see if the files have appeared. 
 
-In additon to the original files, you should have about.txt, two generated csv files, and an edited Markdown file. 
+In addition to the original files, you should have one or more new files and an edited Markdown file. 
 
 If not, return to VS Code and edit/execute files as needed.
 
-If your computer hangs because you forgot a commit message, 
+If your computer hangs because you forget the commit message, 
 just enter your message in the top line of the file it shows in the editor.
 Then click the checkmark in the upper right to close that file and save your commit message.
 "Sync your changes" to push. 
 
-If we didn't have VS Code, the commands are pretty easy in Git Bask or Terminal as well:
+If we didn't use VS Code, the commands are pretty easy in Git Bash or Terminal as well:
 
 
 ```
@@ -336,7 +345,7 @@ git commit -m "initial setup"
 git push origin main
 ```
 
-✅ Git is a powerful tool, widely used in industry. Experience can facilitate onboarding.
+✅ Git is a powerful tool, widely used in industry. Your skills can facilitate onboarding.
 
 
 ## Checklist
@@ -345,7 +354,7 @@ Change the open boxes [ ] below to checked boxes [x] as you complete the tasks.
 
 - [ ] Task 1. Sign up for GitHub
 - [ ] Task 2. Install (and configure) Git
-- [ ] Task 3. Install Miniconda3
+- [ ] Task 3. Install Miniconda3 (or other)
 - [ ] Task 4. Install VS Code
 - [ ] Task 5. Install VS Code Extension: Python
 - [ ] Task 6. Install VS Code Extension: GitHub Repositories
@@ -362,7 +371,7 @@ Check the box, commit your changes (with a message!), and push/sync again.
 
 ## Computer View Settings
 
-Update the important view settings as needed.
+Update important view settings as needed.
 
 ### View File Extensions
 
@@ -373,7 +382,7 @@ If these aren't visible, seach for how to view file extensions on your operating
 
 You may want to see hidden files. 
 Find this option in the Windows File Explorer ribbon.
-Toggle it in Mac Finder with Command Shift dot.
+Toggle it in Mac Finder with Command Shift . ("command shift dot").
 
 Your repo has a hidden .git folder that maintains changes to your code.
 Do a web search to learn more as needed.
@@ -381,8 +390,8 @@ Do a web search to learn more as needed.
 
 ## Additional Resources
 
-1. For more information about Git in VS Code, see [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview.
-
 1. For more information about editing Markdown task lists, see [how to mark a task complete](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists).
+
+1. For more information about Git in VS Code, see [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview.
 
 1. For more information about editing Markdown in VS Code, see [Markdown and Visual Studio Code](https://code.visualstudio.com/docs/languages/markdown).
