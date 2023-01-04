@@ -1,6 +1,6 @@
 # streaming-01-getting-started
 
-> An opinionated way to get started with Python.
+> An opinionated way to get started with Python for streaming analytics
 
 Set yourself up for productivity and collaboration.
 
