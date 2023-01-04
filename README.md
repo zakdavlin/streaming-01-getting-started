@@ -356,17 +356,20 @@ Change the open boxes [ ] below to checked boxes [x] as you complete the tasks.
 - [ ] Task 11. Check the boxes (edit a Markdown file)
 - [ ] Task 12. Commit changes (with a message!) and push to GitHub
 
+Finally - after your initial commit and push, you can check the last box. 
+Check the box, commit your changes (with a message!), and push/sync again. 
+
 
 ## Computer View Settings
 
 Update the important view settings as needed.
 
-## View File Extensions
+### View File Extensions
 
 When negotiating files and folders, you should be able to view file extensions (e.g, .py, .md). 
 If these aren't visible, seach for how to view file extensions on your operating system. 
 
-## See Hidden Files
+### See Hidden Files
 
 You may want to see hidden files. 
 Find this option in the Windows File Explorer ribbon.
@@ -376,7 +379,7 @@ Your repo has a hidden .git folder that maintains changes to your code.
 Do a web search to learn more as needed.
 
 
-## Resources
+## Additional Resources
 
 1. For more information about Git in VS Code, see [Using Git source control in VS Code](https://code.visualstudio.com/docs/sourcecontrol/overview.
 
