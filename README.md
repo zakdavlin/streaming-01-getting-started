@@ -161,9 +161,11 @@ Type `2+2` and hit return/enter. Python handles expressions.
 
 Type `print("Hello, world!")` and hit return/enter. You just called the builtin print() function.
 
-Do a web search for "how to exit interactive Python mode" to get out - or call the builtin exit() function (like you did print() above).
+Do a web search for "how to exit interactive Python mode" to get out - or call the builtin exit() function like you called print() above.
 
 Congratulations - that's a great start - being able to execute Python commands makes amazing things possible! 
+
+✅ Accessing Python interactive mode is a generally useful skill in analytics.
 
 ## Task 4. - Install VS Code Editor
 
@@ -197,17 +199,17 @@ On the top of the primary left side panel, you'll see the installed extensions.
 
 If **GitHub Repositories** is not installed, find it in the recommended list of extensions below, do a web search, or find it here: <https://marketplace.visualstudio.com/items?itemName=github.remotehub>
 
+✅ Leveraging an IDE is an important skill and can increase productivity significantly.
 
-## After Installs 
 
-_Recommendation: After doing any major installation, restart VS Code, restart your terminal, and sometimes, restart your machine before continuing. Ensure your environments are fully updated._
+## After Installs, Restart 
 
-:white-check-mark: Adding extensions to VS Code is a generally useful skill.
+_Recommendation: After doing any significant installation, it may help to restart. After adding extensions, you may restart VS Code, after Git, Python, or tools that affect your environment, you may need to restart your terminal, IDE, and sometimes, your machine before continuing. Ensure your environments are fully updated._
 
 
 ## Task 7. Fork this Repo 
 
-Your machine is ready. Now let's get some code. 
+Your machine is ready - now let's get some code. 
 
 First, we'll get this repo into **your** GitHub account. 
 
@@ -216,7 +218,7 @@ First, we'll get this repo into **your** GitHub account.
 1. Look at all the options available for a repo. 
 1. Find and click the Fork button at the top.
 1. Keep the defaults and click 'Create Fork'. 
-1. When it finishes, look at the repo - note the account.
+1. When it finishes, look at the repo - note the account (it should be yours).
 
 Forking is just a term for copying a repo from one account to another.
 
@@ -234,7 +236,7 @@ Note: The first time you do this, you'll be guided through a process to sign int
 
 You can read more about cloning - and clone your repo without VS Code by following the instructions [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).
 
-When complete, you'll have a new folder in your Documents directory:
+When complete, verify you have a new folder in your Documents directory:
 
 `Documents/streaming-01-getting-started`
 
@@ -253,30 +255,41 @@ Once opened, explore - consider these questions:
 1. Where is this README.md file? 
 1. Can you see a .gitignore file? 
 1. What do you think the .gitignore file does? (Hint: open it.)
-1. Can you find a Python script file (.py)?
-1. Click on the file to open it in the editor.
-1. Can you figure out how to run the file?
+1. Review the files and the organization.
+1. Check the file extension (e.g., .py) to see what types of files are included.
 
 
 ## Task 10. Execute Python Scripts
 
 1. Click on the about.py file to open it for editing.
-1. Click the run button (arrow) in the upper right to execute.
+1. Can you figure out how to run the Python file? Hint: look for a "play" icon ▶️.
+1. Click the run button (arrow) in the upper right to execute/run.
+1. Watch what happens in the intergrated terminal window. 
+1. Click in the terminal window. 
+1. Hit the up arrow key 🔼 on your keyboad to get the last command.
+1. Hit Return (or Enter) to rerun the file using the python command. 
 1. If successful, you should get a new about.txt file. 
 
 For more information about options for executing a Python program in VS Code, see [Run Hello World](https://code.visualstudio.com/docs/python/python-tutorial#_run-hello-world).
 
-About.py provides a lot of useful information about your Python environment. 
+The about module provides a lot of useful information about your Python environment. 
 Review these paths carefully - it tells alot about your Python installation and environment. 
 
-Open, read, and run each of the remaining files in order. 
-You don't need to understand the code yet. 
+Open, read, and run each remaining .py file/script/module in order. 
+You don't need to fully understand the code yet. 
 
 Instead, try to figure out what each file is doing. 
-Like learning any new language, reading is bit easier than 
+Like learning any new language, reading is a bit easier than 
 writing - we can learn much just by seeing it. 
 
 By the end of the course, the code will make much more sense. 
+
+When you finish, you'll have generated several new data files.
+The streaming process will run continously for quite a while. 
+Read the comments in the file to learn how to stop the process.
+
+✅ Creating and running Python scripts is a generally useful skill in analytics.
+
 
 ## Task 11. Check the Boxes
 
@@ -284,25 +297,46 @@ Next, edit this Markdown file to record how things went.
 
 1. In the checklist below, mark the tasks completed that you were able to complete successfully. 
 1. If any could not be completed, leave them as they are.  
+1. Try to complete all but the last one.
 
 
 ## Task 12. Commit Changes and Push to GitHub
 
-1. On the VS Code side panel, click the source control icon (has blue bubble with an number in it).
-1. Important! Above the blue Commit button, it will say "Message". You must include a message. 
-1. In that message input box, type "getting set up".
-1. Click the blue "Commit" button and follow instructions to Commit your code. and push it up to your GitHub repo. 
+Now it's time to get the local work you did (on your machine), 
+back up to the cloud repo in GitHub.
 
-Open a browser to your GitHub repo and see if the files have appeared. 
+With git, we first git add any new files, 
+then git commit them to source control (with a message), 
+then git push them up to GitHub. 
 
-In additon to about.txt, you should have additional data files as well. 
+VS Code makes it pretty easy. 
 
-If not return to VS Code and execute the files until you have generated celcius and kelvin csv files.
+1. On the VS Code side panel, click the source control icon (look for a blue bubble with an number in it).
+1. Important! Above the Commit button, it will say "Message". You must include a message. 
+1. In that message input box, type "initial setup".
+1. Click the blue "Commit" button and follow instructions to Commit your code and sync/push it up to your GitHub repo. 
+
+Verify: Open a browser to your GitHub repo and see if the files have appeared. 
+
+In additon to the original files, you should have about.txt, two generated csv files, and an edited Markdown file. 
+
+If not, return to VS Code and edit/execute files as needed.
 
 If your computer hangs because you forgot a commit message, 
 just enter your message in the top line of the file it shows in the editor.
 Then click the checkmark in the upper right to close that file and save your commit message.
 "Sync your changes" to push. 
+
+If we didn't have VS Code, the commands are pretty easy in Git Bask or Terminal as well:
+
+
+```
+git add .
+git commit -m "initial setup"
+git push origin main
+```
+
+✅ Git is a powerful tool, widely used in industry. Experience can facilitate onboarding.
 
 
 ## Checklist
