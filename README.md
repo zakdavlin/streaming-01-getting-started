@@ -69,7 +69,7 @@ Once you have a GitHub account, continue.
 You'll need the following tools installed on your local machine:
 
 1. **Git** - code management and version control system that interacts with GitHub
-1. **Python (Version 3.11 or greater)** -  popular, powerfull scripting programming language
+1. **Python (Version 3.7+, 3.11 preferred)** -  popular, powerfull scripting programming language
 1. **VS Code** - lightweight, cross-platform editor that helps with code completion, code formatting, and more.
 1. **VS Code Extension: Python (by Microsoft)** - makes VS Code fun for Python
 1. **VS Code Extension: GitHub (by GitHub)** - makes Git fun with VS Code
