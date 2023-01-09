@@ -26,7 +26,9 @@ output_file_name = "batchfile_1_celcius.csv"
 input_file = open(input_file_name, "r")
 
 # Create a file object for output (w = write access)
-output_file = open(output_file_name, "w")
+# On Windows, without newline='', 
+# we'll get an extra line after each record
+output_file = open(output_file_name, "w", newline='')
 
 # Create a csv reader for a comma delimited file
 reader = csv.reader(input_file, delimiter=",")

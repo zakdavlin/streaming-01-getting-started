@@ -13,7 +13,7 @@ input_file_name = "batchfile_1_celcius.csv"
 output_file_name = "batchfile_2_kelvin.csv"
 
 input_file = open(input_file_name, "r")
-output_file = open(output_file_name, "w")
+output_file = open(output_file_name, "w", newline='')
 
 reader = csv.reader(input_file, delimiter=",")
 writer = csv.writer(output_file, delimiter=",")
