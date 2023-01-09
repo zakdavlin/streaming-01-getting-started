@@ -400,6 +400,11 @@ Your VS Code terminal is likely Powershell (look for a the PS before your path).
 We want to switch it to "Command Prompt" for Python commands. 
 From the VS Code menu / View / Command Palette. Start typing 'Terminal: Select Default Profile' until it appears, click it and change from Powershell to Command Prompt. 
 
+### Issue: VS Code wants to install Pylance extension
+
+Suggestion: Sure. If VS Code suggests an extension, it's often good to go ahead and try it. 
+Read up a bit if curious, but the suggestions are usually helpul. 
+
 ## Additional Resources
 
 1. For more information about editing Markdown task lists, see [how to mark a task complete](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/about-task-lists).
